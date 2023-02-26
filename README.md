@@ -10,10 +10,11 @@ Therefore, it assumes that the students already possess basic programming skills
 
 The course contains the following topics:
 
+- Introduction to objects, attributes, operations, and classes
 - Structure of Java programms
 - Foundations of object usage (e.g., instantiation, operation calls) 
-- Understanding and usage of given APIs
 - Control flow structures
+- Understanding and usage of given APIs
 - Identify errors and classify them into error classes (e.g., static dynamic errors)
 - Writing own operations in given Java classes
 - Creating own Java classes
@@ -28,4 +29,5 @@ The course contains the following topics:
 <div style="text-align: justify">
 The exercise sheets' projects are managed in this repository's branches.
 The exercises themselves are available in this repository's wiki page.
+All material is available under MIT License.
 </div>
