@@ -71,7 +71,7 @@ public class Student {
             throw new IllegalArgumentException("Course must not be null, and this student must be enrolled already");
         }
         this.enrollments.removeIf(enrollment -> enrollment.getCourse().equals(course));
-        if (course.isEnrolled(this)) {
+        if (course.isStudentEnrolled(this)) {
             course.drop(this);
         }
     }

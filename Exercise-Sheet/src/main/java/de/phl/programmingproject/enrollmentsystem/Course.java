@@ -51,7 +51,7 @@ public class Course {
      * @throws IllegalArgumentException If the student is null or not enrolled.
      */
     public void drop(final Student student) {
-        if (student == null || !this.isEnrolled(student)) {
+        if (student == null || !this.isStudentEnrolled(student)) {
             throw new IllegalArgumentException("Student must not be null and must be enrolled already");
         }
         this.enrollments.removeIf(enrollment -> enrollment.getStudent().equals(student));
@@ -66,7 +66,7 @@ public class Course {
      * @return true if the student is enrolled in this course, otherwise false.
      * @throws IllegalArgumentException If the student is null
      */
-    public boolean isEnrolled(final Student student) {
+    public boolean isStudentEnrolled(final Student student) {
         if (student == null) {
             throw new IllegalArgumentException("Student must not be null");
         }
