@@ -28,7 +28,9 @@ public class Enrollment {
     }
 
     public String getInfo() {
-        return String.format("Student: %s, Course: %s, Grade: %s", student.getName(), course.getName(), grade.isPresent() ? grade.get() : "N/A");
+        return String.format(
+                "Student: %s, Course: %s, Grade: %s",
+                student.getName(), course.getName(), grade.isPresent() ? grade.get() : "N/A");
     }
 
     /**

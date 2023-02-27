@@ -3,7 +3,7 @@ package de.phl.programmingproject.petadoption;
 import java.util.Date;
 
 public class Adoption {
-    
+
     private final Pet pet;
     private final Adopter adopter;
     private final Date date;

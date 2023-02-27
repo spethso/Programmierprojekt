@@ -25,8 +25,14 @@ public class Student {
     }
 
     public String getInfo() {
-        return String.format("Name: %s, ID: %s, Courses: [%s]", name, id,
-                enrollments.stream().map(Enrollment::getCourse).map(Course::getName).collect(Collectors.joining(", ")));
+        return String.format(
+                "Name: %s, ID: %s, Courses: [%s]",
+                name,
+                id,
+                enrollments.stream()
+                        .map(Enrollment::getCourse)
+                        .map(Course::getName)
+                        .collect(Collectors.joining(", ")));
     }
 
     /**
@@ -51,7 +57,8 @@ public class Student {
         if (course == null) {
             throw new IllegalArgumentException("Course must not be null");
         }
-        return this.enrollments.stream().anyMatch(enrollment -> enrollment.getCourse().equals(course));
+        return this.enrollments.stream()
+                .anyMatch(enrollment -> enrollment.getCourse().equals(course));
     }
 
     /**

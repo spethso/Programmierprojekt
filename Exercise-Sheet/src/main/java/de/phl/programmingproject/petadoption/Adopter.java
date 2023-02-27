@@ -1,7 +1,7 @@
 package de.phl.programmingproject.petadoption;
 
 public class Adopter {
-    
+
     private final String name;
     private final String phone;
     private final String email;
@@ -25,5 +25,4 @@ public class Adopter {
     public String getInfo() {
         return String.format("Name: %s, Phone: %s, Email: %s", name, phone, email);
     }
-
 }

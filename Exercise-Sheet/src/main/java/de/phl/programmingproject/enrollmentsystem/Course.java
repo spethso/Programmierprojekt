@@ -1,7 +1,6 @@
 package de.phl.programmingproject.enrollmentsystem;
 
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -25,8 +24,13 @@ public class Course {
     }
 
     public String getInfo() {
-        return String.format("Name: %s, Students: [%s]", name,
-                this.enrollments.stream().map(Enrollment::getStudent).map(Student::getName).collect(Collectors.joining(", ")));
+        return String.format(
+                "Name: %s, Students: [%s]",
+                name,
+                this.enrollments.stream()
+                        .map(Enrollment::getStudent)
+                        .map(Student::getName)
+                        .collect(Collectors.joining(", ")));
     }
 
     /**
@@ -66,7 +70,8 @@ public class Course {
         if (student == null) {
             throw new IllegalArgumentException("Student must not be null");
         }
-        return this.enrollments.stream().anyMatch(enrollment -> enrollment.getStudent().equals(student));
+        return this.enrollments.stream()
+                .anyMatch(enrollment -> enrollment.getStudent().equals(student));
     }
 
     /**

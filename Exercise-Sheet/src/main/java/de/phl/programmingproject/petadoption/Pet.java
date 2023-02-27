@@ -30,7 +30,7 @@ public class Pet {
         this.age = age;
         this.breed = breed;
     }
-    
+
     public String getInfo() {
         return String.format("Name: %s, Age: %d, Breed: %s", name, age, breed);
     }
@@ -53,5 +53,4 @@ public class Pet {
     public boolean isAdopted() {
         return this.adopted;
     }
-    
 }
