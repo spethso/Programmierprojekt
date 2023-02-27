@@ -6,11 +6,9 @@ public class Person {
 
     /**
      * Creates a new person.
-     * 
-     * @param age
-     *            The age of the person.
-     * @param height
-     *            The height of the person.
+     *
+     * @param age The age of the person.
+     * @param height The height of the person.
      * @throws IllegalArgumentException if the age or height is negative.
      */
     public Person(final int age, final int height) {

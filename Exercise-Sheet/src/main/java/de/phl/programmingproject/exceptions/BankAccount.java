@@ -5,7 +5,7 @@ public class BankAccount {
 
     /**
      * Creates a new bank account.
-     * 
+     *
      * @param balance
      *            The initial balance of the account.
      * @throws IllegalArgumentException if the balance is negative.
@@ -19,7 +19,7 @@ public class BankAccount {
 
     /**
      * Withdraws the given amount from the account.
-     * 
+     *
      * @param amount
      *            The amount to withdraw.
      * @throws IllegalArgumentException if the amount is negative.
@@ -31,7 +31,7 @@ public class BankAccount {
 
     /**
      * Deposits the given amount to the account.
-     * 
+     *
      * @param amount
      *            The amount to deposit.
      * @throws IllegalArgumentException if the amount is negative.
