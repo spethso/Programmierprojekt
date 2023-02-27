@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.phl.programmierprojekt</groupId>
-    <artifactId>exercise-sheet-1</artifactId>
+    <artifactId>exercise-sheet-2</artifactId>
     <version>1.0.0</version>
-    <name>Exercise-Sheet 1</name>
+    <name>Exercise-Sheet 2</name>
 
     <properties>
         <formatter.version>2.33.0</formatter.version>
