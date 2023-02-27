@@ -11,19 +11,24 @@ public class Enrollment {
      * Creates a new enrollment with the given student and course.
      * @param student The student to enroll.
      * @param course The course to enroll to.
-     * @throws IllegalArgumentException If the student or course is null.
+     * @throws IllegalArgumentException If the student or course is null or if the student is already enrolled in that course.
      */
     public Enrollment(final Student student, final Course course) {
         if (student == null || course == null) {
             throw new IllegalArgumentException("Student and course must not be null");
         }
+        if (student.isEnrolledIn(course)) {
+            throw new IllegalArgumentException("The student is already enrolled in the course");
+        }
         this.student = student;
         this.course = course;
+        student.enrollments.add(this);
+        course.enrollments.add(this);
         this.grade = Optional.empty();
     }
 
     public String getInfo() {
-        return String.format("Student: %s, Course: %s, Grade: %s", student.getInfo(), course.getInfo(), grade.isPresent() ? grade.get() : "N/A");
+        return String.format("Student: %s, Course: %s, Grade: %s", student.getName(), course.getName(), grade.isPresent() ? grade.get() : "N/A");
     }
 
     /**
@@ -36,5 +41,21 @@ public class Enrollment {
             throw new IllegalArgumentException("Grade must be between 1.0 and 5.0");
         }
         this.grade = Optional.of(grade);
+    }
+
+    /**
+     * Gets the enrolled student.
+     * @return The enrolled student
+     */
+    public Student getStudent() {
+        return this.student;
+    }
+
+    /**
+     * Gets the associated course.
+     * @return The associated course.
+     */
+    public Course getCourse() {
+        return this.course;
     }
 }
