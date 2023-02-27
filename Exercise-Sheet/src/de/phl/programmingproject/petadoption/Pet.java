@@ -1,5 +1,7 @@
 package de.phl.programmingproject.petadoption;
 
+import java.util.Date;
+
 public class Pet {
 
     private final String name;
@@ -35,13 +37,17 @@ public class Pet {
 
     /**
      * Sets the pet to adopted.
+     * @param adopter The Adopter who adopts this Pet.
+     * @param date The Date when this pet was adopted
+     * @return The adoption created as this pet was adopted.
      * @throws IllegalStateException If the pet is already adopted.
      */
-    public void adopt() {
+    public Adoption adopt(final Adopter adopter, final Date date) {
         if (this.adopted) {
             throw new IllegalStateException("Pet is already adopted");
         }
         this.adopted = true;
+        return new Adoption(this, adopter, date);
     }
 
     public boolean isAdopted() {
