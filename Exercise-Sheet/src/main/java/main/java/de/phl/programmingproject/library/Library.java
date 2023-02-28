@@ -11,7 +11,7 @@ public class Library {
 
     /**
      * Creates a new library.
-     * 
+     *
      * @param books The books in the library.
      * @throws IllegalArgumentException if the books set is null or at least one of the books is null.
      */
@@ -28,7 +28,7 @@ public class Library {
      * Searches for books based on a given search term and returns a set of matching
      * books. The search term can be either a part of a book title or an author's
      * name. The search term must not be null or empty.
-     * 
+     *
      * @param searchTerm The search term.
      * @return A set of matching books.
      * @throws IllegalArgumentException if the search term is null or empty.
@@ -39,7 +39,7 @@ public class Library {
 
     /**
      * Lends a book with the given title to the visitor with the given ID.
-     * 
+     *
      * @param title     The title of the book.
      * @param visitorId The ID of the visitor.
      * @throws IllegalArgumentException if no book with the given title exists, no
@@ -62,7 +62,7 @@ public class Library {
 
     /**
      * Returns a book.
-     * 
+     *
      * @param title     The title of the book.
      * @param visitorId The ID of the visitor.
      * @throws IllegalArgumentException if no book with the given title exists or if
@@ -75,7 +75,7 @@ public class Library {
 
     /**
      * Returns the visitor with the given ID.
-     * 
+     *
      * @param visitorId The ID of the visitor.
      * @return The visitor with the given ID.
      * @throws IllegalArgumentException if no visitor with the given ID exists.
@@ -91,7 +91,7 @@ public class Library {
 
     /**
      * Registers a new visitor.
-     * 
+     *
      * @param name The name of the visitor.
      * @return The ID of the visitor.
      * @throws IllegalArgumentException if the name is null or empty.
@@ -101,5 +101,4 @@ public class Library {
         visitors.add(visitor);
         return visitor.getId();
     }
-
 }

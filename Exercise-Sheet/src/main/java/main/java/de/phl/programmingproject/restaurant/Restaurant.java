@@ -7,7 +7,6 @@ public class Restaurant {
     private final Employee owner;
     private final Set<Employee> employees;
 
-
     public Restaurant(final Employee owner) {
         this.owner = owner;
         employees = new HashSet<>();

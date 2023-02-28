@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Set;
 
 public class CandyFactory {
-    
+
     private final List<String> sugarMixFlavors;
     private final List<String> juicyCoreFlavors;
 

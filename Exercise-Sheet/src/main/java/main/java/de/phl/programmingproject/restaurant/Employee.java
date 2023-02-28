@@ -9,7 +9,7 @@ public class Employee {
     public Employee() {
         this.orders = new ArrayDeque<>();
     }
-    
+
     /**
      * Assigns an order to the employee.
      * @param order The order to be assigned.
@@ -29,5 +29,5 @@ public class Employee {
 
     public void processOrders() {
         // TODO: Implement this operation
-    } 
+    }
 }

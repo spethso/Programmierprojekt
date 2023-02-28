@@ -4,7 +4,7 @@ import java.util.NoSuchElementException;
 import java.util.Optional;
 
 public class Candy {
-    
+
     private final SugarMix sugarMix;
     private Optional<JuicyCore> juicyCore;
 
@@ -31,7 +31,7 @@ public class Candy {
     public Candy(final SugarMix sugarMix, final JuicyCore juicyCore) {
         // TODO: Implement this operation
         this.sugarMix = null;
-        this.juicyCore = null; 
+        this.juicyCore = null;
     }
 
     public SugarMix getSugarMix() {
@@ -40,7 +40,7 @@ public class Candy {
 
     /**
      * Returns the juicy core of the candy. Throws a NoSuchElementException if the candy has no juicy core.
-     * 
+     *
      * @return The juicy core of the candy.
      * @throws NoSuchElementException if the candy has no juicy core.
      */

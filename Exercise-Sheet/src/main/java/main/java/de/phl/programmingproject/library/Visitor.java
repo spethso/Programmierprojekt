@@ -8,7 +8,7 @@ public class Visitor {
     private final int id;
     private final String name;
     private final Set<Book> lentBooks;
-    
+
     /**
      * Creates a new visitor.
      * @param id The ID of the visitor.
@@ -35,5 +35,4 @@ public class Visitor {
     public Set<Book> getLentBooks() {
         return lentBooks;
     }
-    
 }

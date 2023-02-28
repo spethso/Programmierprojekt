@@ -16,7 +16,7 @@ public class JuicyCore {
         }
         this.flavor = flavor;
     }
-    
+
     public String getFlavor() {
         return flavor;
     }

@@ -1,7 +1,7 @@
 package main.java.de.phl.programmingproject.restaurant;
 
 public class Order {
-    
+
     private final String name;
 
     public Order(final String name) {
