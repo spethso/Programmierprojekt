@@ -9,6 +9,12 @@ public class Visitor {
     private final String name;
     private final Set<Book> lentBooks;
     
+    /**
+     * Creates a new visitor.
+     * @param id The ID of the visitor.
+     * @param name The name of the visitor.
+     * @throws IllegalArgumentException if the name is null or empty.
+     */
     public Visitor(final int id, final String name) {
         if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Name is null or empty.");
