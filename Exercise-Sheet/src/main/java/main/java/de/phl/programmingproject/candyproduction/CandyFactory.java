@@ -24,7 +24,7 @@ public class CandyFactory {
      * @throws IllegalArgumentException if the list is null, empty or contains null.
      */
     public void addSugarMixFlavors(final List<String> sugarMixFlavors) {
-        if (sugarMixFlavors == null || sugarMixFlavors.isEmpty() || sugarMixFlavors.contains(null)) {
+        if (sugarMixFlavors == null || sugarMixFlavors.isEmpty()) {
             throw new IllegalArgumentException("Flavors is null, empty or contains null.");
         }
         this.sugarMixFlavors.addAll(sugarMixFlavors);
@@ -37,7 +37,7 @@ public class CandyFactory {
      * @throws IllegalArgumentException if the list is null, empty or contains null.
      */
     public void addJuicyCoreFlavors(final List<String> juicyCoreFlavors) {
-        if (juicyCoreFlavors == null || juicyCoreFlavors.isEmpty() || juicyCoreFlavors.contains(null)) {
+        if (juicyCoreFlavors == null || juicyCoreFlavors.isEmpty()) {
             throw new IllegalArgumentException("Flavors is null, empty or contains null.");
         }
         this.juicyCoreFlavors.addAll(juicyCoreFlavors);

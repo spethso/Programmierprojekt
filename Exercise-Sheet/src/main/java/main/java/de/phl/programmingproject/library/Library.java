@@ -1,10 +1,11 @@
 package main.java.de.phl.programmingproject.library;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Library {
-    private final Set<Book> books;
+    private final Collection<Book> books;
     private final Set<Visitor> visitors;
     private int highestVisitorID;
 
@@ -14,8 +15,8 @@ public class Library {
      * @param books The books in the library.
      * @throws IllegalArgumentException if the books set is null or at least one of the books is null.
      */
-    public Library(final Set<Book> books) {
-        if (books == null || books.contains(null)) {
+    public Library(final Collection<Book> books) {
+        if (books == null) {
             throw new IllegalArgumentException("Books must not be null");
         }
         this.books = books;

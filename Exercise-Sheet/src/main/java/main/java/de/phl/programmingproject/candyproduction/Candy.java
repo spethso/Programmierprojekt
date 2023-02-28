@@ -18,6 +18,7 @@ public class Candy {
             throw new IllegalArgumentException("Sugar mix must not be null");
         }
         this.sugarMix = sugarMix;
+        this.juicyCore = Optional.empty();
     }
 
     /**
@@ -46,5 +47,14 @@ public class Candy {
     public JuicyCore getJuicyCore() {
         // TODO: Implement this operation
         return null;
+    }
+
+    /**
+     * Checks if this candy has a juice core.
+     *
+     * @return True if it has a juice core.
+     */
+    public boolean hasJuiceCore() {
+        return this.juicyCore.isPresent();
     }
 }

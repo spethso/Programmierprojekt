@@ -12,7 +12,7 @@ public class SugarMix {
      * @throws IllegalArgumentException if the flavors is null, empty or contains null.
      */
     public SugarMix(final Set<String> flavors) {
-        if (flavors == null || flavors.isEmpty() || flavors.contains(null)) {
+        if (flavors == null || flavors.isEmpty()) {
             throw new IllegalArgumentException("Flavors is null, empty or contains null.");
         }
         this.flavors = flavors;
