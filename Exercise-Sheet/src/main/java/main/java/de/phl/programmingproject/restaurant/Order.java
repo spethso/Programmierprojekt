@@ -11,4 +11,11 @@ public class Order {
     public String getName() {
         return name;
     }
+
+    /**
+     * Prints the order name to mark it as processed.
+     */
+    public void handle() {
+        System.out.format("Order %s is being handled.", name);
+    }
 }
