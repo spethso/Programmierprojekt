@@ -31,5 +31,4 @@ public class Order {
     public int getAmount() {
         return this.amount;
     }
-
 }

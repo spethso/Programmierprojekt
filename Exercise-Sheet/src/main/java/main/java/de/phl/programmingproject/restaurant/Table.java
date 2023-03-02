@@ -8,12 +8,11 @@ public class Table {
     private final int tableNumber;
     private final int seats;
     private boolean occupied;
-
     private final List<Order> orders = new ArrayList<>();
 
     /**
      * Creates a new table with the given table number and number of seats.
-     * 
+     *
      * @param tableNumber the table number
      * @param seats the number of seats
      * @throws IllegalArgumentException if the table number or number of seats is less than 0
@@ -64,5 +63,4 @@ public class Table {
     public List<Order> getOrders() {
         return this.orders;
     }
-
 }

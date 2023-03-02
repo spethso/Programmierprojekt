@@ -8,7 +8,8 @@ public class MenuItem {
 
     public MenuItem(final String itemName, final String description, final double price) {
         if (itemName == null || description == null || price < 0) {
-            throw new IllegalArgumentException("Item name, description and price must not be null or price must be greater than 0");
+            throw new IllegalArgumentException(
+                    "Item name, description and price must not be null or price must be greater than 0");
         }
         this.itemName = itemName;
         this.description = description;
@@ -26,5 +27,4 @@ public class MenuItem {
     public double getPrice() {
         return this.price;
     }
-
 }
