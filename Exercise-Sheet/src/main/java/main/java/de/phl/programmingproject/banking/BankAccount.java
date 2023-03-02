@@ -6,7 +6,7 @@ public class BankAccount {
 
     /**
      * Creates a new bank account with the given balance and account number.
-     * 
+     *
      * @param balance the balance
      * @param accountNumber the account number
      * @throws IllegalArgumentException if the balance or account number is less than 0
@@ -32,24 +32,24 @@ public class BankAccount {
 
     /**
      * Deposits the given amount to the account.
-     * 
+     *
      * @param amount the amount to deposit
      * @throws IllegalArgumentException if the amount is less than 0
      */
-    public void deposit (final double amount) {
+    public void deposit(final double amount) {
         if (amount < 0) {
             throw new IllegalArgumentException("Amount must be greater than 0");
         }
         balance += amount;
     }
-    
+
     /**
      * Withdraws the given amount from the account.
-     * 
+     *
      * @param amount the amount to withdraw
      * @throws IllegalArgumentException if the amount is less than 0 or greater than the balance
      */
-    public void withdraw (final double amount) {
+    public void withdraw(final double amount) {
         if (amount < 0) {
             throw new IllegalArgumentException("Amount must be greater than 0");
         }
