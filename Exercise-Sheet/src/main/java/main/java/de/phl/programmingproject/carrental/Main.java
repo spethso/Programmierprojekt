@@ -1,4 +1,4 @@
-package main.java.de.phl.carrental;
+package main.java.de.phl.programmingproject.carrental;
 
 public class Main {
     public static void main(String[] args) {
