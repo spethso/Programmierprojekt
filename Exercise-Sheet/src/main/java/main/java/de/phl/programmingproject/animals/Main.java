@@ -3,6 +3,7 @@ package main.java.de.phl.programmingproject.animals;
 public class Main {
     public static void main(final String[] args) {
         // Part 1
+        System.out.println("===Part 2===");
         final Animal animal = new Animal("Animal");
         animal.speak();
         final Mammal mammal = new Mammal("Mammal", "Mammal breed");
@@ -18,5 +19,13 @@ public class Main {
         dog.bark();
 
         // Part 2
+        System.out.println("===Part 2===");
+        final Zoo zoo = new Zoo();
+        zoo.addAnimal(animal);
+        zoo.addAnimal(mammal);
+        zoo.addAnimal(cat);
+        zoo.addAnimal(cat2);
+        zoo.addAnimal(dog);
+        zoo.displayAnimals();
     }
 }
